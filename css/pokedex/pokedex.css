@@ -1,0 +1,24 @@
+.pokedex {
+  margin-top: 100px;
+  display: flex;
+  align-items: center; /* centraliza verticalmente */
+  justify-content: space-between;
+}
+
+.pokedex h1 {
+  font-family: "Fredoka One";
+  color: #00057f;
+  font-size: 68px;
+  margin: 0; /* remove margin-bottom para melhor alinhamento */
+}
+
+.pokedex span {
+  color: #8d0000;
+}
+
+.pokedex a {
+  font-size: 20px;
+  font-family: "Fredoka One";
+  color: #00057f;
+  left: 50%;
+}
