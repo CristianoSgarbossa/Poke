@@ -150,6 +150,9 @@
 }
 
 @media (max-width: 600px) {
+  .informacao-imagem {
+    padding-top: 40px;
+  }
   .informacao-grid {
     grid-template-columns: 1fr;
   }

@@ -108,6 +108,10 @@
 }
 
 @media (max-width: 600px) {
+  .todos-favoritos-m {
+    padding-top: 100px;
+  }
+
   .img-poke {
     margin-left: 30px;
   }
