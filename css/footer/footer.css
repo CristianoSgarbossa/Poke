@@ -1,0 +1,38 @@
+.footer-bg {
+  background: linear-gradient(145deg, #ff2c2c 0%, #3a3a3a 40%, #0077ff 100%);
+  background-size: 300% 300%;
+  animation: gradientMove 10s ease-in-out infinite;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer img {
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.footer-link {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.footer-link a {
+  font-family: "Fredoka One";
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.footer p {
+  font-family: "Poppins";
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 300;
+  padding-bottom: 20px;
+}

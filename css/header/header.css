@@ -1,6 +1,22 @@
 .header-bg {
-  background: #8d0000;
+  background: linear-gradient(145deg, #ff2c2c 0%, #3a3a3a 40%, #0077ff 100%);
+  background-size: 300% 300%;
+  animation: gradientMove 10s ease-in-out infinite;
   height: 120px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  transition: backdrop-filter 0.4s ease, background 0.4s ease;
+}
+
+/* Efeito de vidro quando rola */
+.header-bg.scrolled {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
 .header {
@@ -39,7 +55,8 @@
   transition: width 0.3s ease;
 }
 
-.header-menu a:hover::after {
+.header-menu a:hover::after,
+.header-menu a.active::after {
   width: 100%;
 }
 
@@ -81,7 +98,7 @@
 
 @media (max-width: 540px) {
   .header-bg {
-    height: 180px;
+    height: 200px;
   }
 
   .search-box input {

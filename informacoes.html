@@ -9,30 +9,66 @@
 </head>
 
 <body>
-
   <header class="header-bg">
     <nav class="header container">
       <img src="./img/pokebola.png" alt="Pokebola">
       <ul class="header-menu">
         <li><a href="./index.html">Home</a></li>
+        <li><a href="#pokedex">Pokedex</a></li>
+        <div class="search-box">
+          <input type="text" placeholder="Pesquisar..." id="search-input">
+          <button id="search-btn">
+            <img src="../../img/1093184.svg" alt="Lupa">
+          </button>
+        </div>
       </ul>
     </nav>
   </header>
 
+
   <main>
-    <section class="pokemon-info container">
-      <h1 id="nome"></h1>
-      <p id="descricao"></p>
-      <img id="imagem" src="" alt="Imagem do Pokémon">
-
-      <div id="tipos" class="tipos"></div>
-      <p id="local"></p>
-
-      <div id="evolucao" class="evolucao"></div>
+    <section class="informacao">
+      <div class="container">
+        <div class="informacao-titulo">
+          <h1 id="nome"></h1>
+        </div>
+        <div class="informacao-grid">
+          <div class="informacao-imagem">
+            <img id="imagem" alt="Imagem do Pokémon">
+          </div>
+          <div class="informacao-descricao">
+            <p id="descricao"></p>
+            <div id="tipos"></div>
+          </div>
+        </div>
+        <div class="informacao-local">
+          <h1>local<span>.</span></h1>
+          <p id="local"></p>
+        </div>
+        <div class="informacao-evolucao">
+          <h1>evolução<span>.</span></h1>
+          <div id="evolucao"></div>
+        </div>
+      </div>
     </section>
+
   </main>
 
-  <script src="./script.js"></script>
+  <footer id="footer" class="footer-bg" aria-label="Footer">
+    <div class="container">
+      <div class="footer">
+        <img src="./img/pokebola.png" alt="Pokebola">
+        <div class="footer-link">
+          <a href="#pesquisa">Pesquisa</a>
+          <a href="#pokedex">Pokedex</a>
+        </div>
+        <p>© 2025 Pokémon Fan Site — Pokémon. Todos os direitos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/fakeapi.js"></script>
+  <script src="./js/informacoes.js"></script>
 </body>
 
 </html>
