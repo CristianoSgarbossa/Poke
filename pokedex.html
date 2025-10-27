@@ -15,13 +15,26 @@
       <img src="./img/pokebola.png" alt="Pokebola">
       <ul class="header-menu">
         <li><a href="./index.html">Home</a></li>
-        <li><a href="#pokedex">Pokedex</a></li>
         <div class="search-box">
           <input type="text" placeholder="Pesquisar..." id="search-input">
           <button id="search-btn">
             <img src="../../img/1093184.svg" alt="Lupa">
           </button>
         </div>
+
+        <li class="filtro-container">
+          <button id="filtro-btn" class="filtro-btn" aria-label="Abrir filtro">
+            <svg id="filtro-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#ffffff" viewBox="0 0 24 24">
+              <path d="M3 4h18v2l-7 8v6l-4 2v-8L3 6V4z" />
+            </svg>
+          </button>
+
+          <div id="filtro-menu" class="filtro-menu">
+            <button data-filtro="tipo">Filtrar por tipo</button>
+            <button data-filtro="az">A - Z</button>
+            <button data-filtro="id">Por ID</button>
+          </div>
+        </li>
       </ul>
     </nav>
   </header>

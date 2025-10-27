@@ -11,7 +11,6 @@
   transition: backdrop-filter 0.4s ease, background 0.4s ease;
 }
 
-/* Efeito de vidro quando rola */
 .header-bg.scrolled {
   background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(15px);

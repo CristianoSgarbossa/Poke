@@ -60,9 +60,9 @@
 
 #tipos {
   margin-top: 150px;
-  display: flex; /* transforma em flex container */
-  gap: 10px; /* espaçamento entre os spans */
-  flex-wrap: wrap; /* permite que quebrem linha se necessário */
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 #tipos span {
@@ -150,9 +150,6 @@
 }
 
 @media (max-width: 600px) {
-  .informacao-imagem {
-    padding-top: 40px;
-  }
   .informacao-grid {
     grid-template-columns: 1fr;
   }
