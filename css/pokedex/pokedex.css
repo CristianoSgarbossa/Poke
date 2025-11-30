@@ -1,0 +1,149 @@
+.pokedex {
+  margin-top: 100px;
+  display: flex;
+  align-items: center; /* centraliza verticalmente */
+  justify-content: space-between;
+}
+
+.pokedex h1 {
+  font-family: "Fredoka One";
+  color: #00057f;
+  font-size: 68px;
+  margin: 0;
+  padding-bottom: 50px;
+}
+
+.pokedex span {
+  color: #8d0000;
+}
+
+.nh-fv {
+  font-family: "Poppins";
+  color: #ffffff;
+  font-size: 18px;
+  width: 200ch;
+}
+
+.pokedex a {
+  font-size: 20px;
+  font-family: "Fredoka One";
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.pokedex a::before {
+  color: #000000;
+}
+
+.pokedex a:hover {
+  color: #000000;
+}
+
+.favorito {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr 3fr;
+  gap: 40px;
+  margin-bottom: 100px;
+}
+
+.favorito-item {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  padding: 25px 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  height: 300px;
+  width: 200px;
+  z-index: 1;
+}
+
+.favorito-item:hover {
+  transform: scale(1.05);
+}
+
+.img-poke {
+  display: block;
+  margin-left: 20px;
+  margin-top: 20px;
+  height: 150px;
+  position: absolute;
+}
+
+.favorito-nome {
+  font-size: 18px;
+  margin: 30px 0;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+}
+
+.favorito-id {
+  font-size: 14px;
+  color: #000000;
+  position: absolute;
+  top: 25px;
+  left: 10px;
+  font-family: "Fredoka One", sans-serif;
+}
+
+.tipo-container {
+  position: absolute;
+  top: 25px;
+  right: 10px;
+  display: flex;
+  gap: 5px;
+}
+
+.tipo-container img {
+  height: 20px;
+  width: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 1000px) {
+  .favorito {
+    grid-template-columns: 3fr 3fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .img-poke {
+    margin-left: 25px;
+  }
+}
+
+@media (max-width: 700px) {
+  .img-poke {
+    margin-left: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .todos-favoritos-m {
+    padding-top: 100px;
+  }
+
+  .img-poke {
+    margin-left: 30px;
+  }
+
+  .pokedex a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .favorito {
+    grid-template-columns: 3fr;
+    justify-self: center;
+  }
+
+  .img-poke {
+    margin-left: 10px;
+  }
+}

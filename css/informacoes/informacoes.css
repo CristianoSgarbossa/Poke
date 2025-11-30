@@ -1,0 +1,180 @@
+.informacao {
+  margin-top: 200px;
+}
+
+.informacao-titulo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.informacao-titulo img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.informacao-titulo {
+  font-family: "Fredoka One";
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.informacao-imagem {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  padding: 25px 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  height: 300px;
+  width: 200px;
+  z-index: 1;
+  margin-bottom: 30px;
+}
+
+.informacao-imagem img {
+  display: block;
+  margin-left: -20px;
+  margin-top: 20px;
+  height: 250px;
+  width: 250px;
+  position: absolute;
+}
+
+.informacao-grid {
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  align-items: center;
+}
+
+.informacao-descricao {
+  font-family: "Poppins";
+  max-width: 70ch;
+}
+
+#tipos {
+  margin-top: 150px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+#tipos span {
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+}
+
+.informacao-local {
+  margin-top: 100px;
+}
+
+.informacao-local h1 {
+  font-family: "Fredoka One";
+  color: #00057f;
+  font-size: 68px;
+  margin-bottom: 20px;
+}
+
+.informacao-local span {
+  color: #8d0000;
+}
+
+.informacao-local p {
+  font-family: "Poppins";
+}
+
+.informacao-evolucao {
+  margin-top: 100px;
+}
+
+.informacao-evolucao h1 {
+  font-family: "Fredoka One";
+  color: #00057f;
+  font-size: 68px;
+  margin-bottom: 20px;
+}
+
+.informacao-evolucao span {
+  color: #8d0000;
+}
+
+#evolucao {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  height: 300px;
+  margin-bottom: 100px;
+}
+
+#evolucao img {
+  display: block;
+  height: 250px;
+  width: 250px;
+}
+
+#evolucao p {
+  text-align: center;
+  font-family: "Poppins";
+}
+
+@media (max-width: 800px) {
+  .informacao-descricao {
+    font-family: "Poppins";
+    max-width: 40ch;
+    font-size: 14px;
+  }
+
+  .informacao-grid {
+    gap: 20px;
+  }
+
+  #evolucao img {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  .informacao-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .informacao-titulo {
+    font-size: 18px;
+  }
+
+  #tipos {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  #evolucao img {
+    height: 100px;
+    width: 100px;
+  }
+
+  #evolucao p {
+    font-size: 12px;
+  }
+
+  .informacao-titulo {
+    font-size: 14px;
+    padding-top: 40px;
+  }
+}

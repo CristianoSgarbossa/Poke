@@ -1,0 +1,81 @@
+body {
+  background: linear-gradient(145deg, #ff2c2c 0%, #3a3a3a 40%, #0077ff 100%);
+  background-size: 300% 300%;
+  animation: gradientMove 10s ease-in-out infinite;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a,
+li,
+ul,
+h1,
+h2,
+h3,
+p,
+input {
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#estrela-favorito {
+  font-size: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: gold;
+}
+
+.tipo-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  margin: 2px;
+  border-radius: 12px;
+  background-color: #eee;
+}
+
+.evolucao-card {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+}
+
+.evolucao-card img {
+  width: 80px;
+  height: 80px;
+}

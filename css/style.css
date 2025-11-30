@@ -1,0 +1,21 @@
+/* Header */
+@import "./header/header.css";
+@import "./header/header-pokedex.css";
+
+/* Pokemon */
+@import "./pokemon/pokemon.css";
+
+/* Pokedex */
+@import "./pokedex/pokedex.css";
+@import "./pokedex/pokedex-completo.css";
+
+/* Footer */
+@import "./footer/footer.css";
+
+/* Utilidades */
+@import "./utilidades/utilidades.css";
+@import "./utilidades/cores.css";
+@import "./utilidades/tipografia.css";
+
+/* Informacoes */
+@import "./informacoes/informacoes.css";

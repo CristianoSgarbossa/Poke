@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meus Favoritos</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <header class="header-bg">
+    <nav class="header container">
+      <img src="./img/pokebola.png" alt="Pokebola">
+      <ul class="header-menu">
+        <li><a href="./index.html">Home</a></li>
+        <div class="search-box">
+          <input type="text" placeholder="Pesquisar..." id="search-input">
+          <button id="search-btn">
+            <img src="./img/1093184.svg" alt="Lupa">
+          </button>
+        </div>
+
+        <li class="filtro-container">
+          <button id="filtro-btn" class="filtro-btn" aria-label="Abrir filtro">
+            <svg id="filtro-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#ffffff" viewBox="0 0 24 24">
+              <path d="M3 4h18v2l-7 8v6l-4 2v-8L3 6V4z" />
+            </svg>
+          </button>
+
+          <div id="filtro-menu" class="filtro-menu">
+            <button data-filtro="tipo">Filtrar por tipo</button>
+            <button data-filtro="az">A - Z</button>
+            <button data-filtro="id">Por ID</button>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="container todos-favoritos-m">
+    <div id="todos-favoritos" class="favorito"></div>
+  </section>
+
+  <footer id="footer" class="footer-bg" aria-label="Footer">
+    <div class="container">
+      <div class="footer">
+        <img src="./img/pokebola.png" alt="Pokebola">
+        <div class="footer-link">
+          <a href="#pesquisa">Pesquisa</a>
+          <a href="#pokedex">Pokedex</a>
+        </div>
+        <p>© 2025 Pokémon Fan Site — Pokémon. Todos os direitos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
+  <script src="./js/fakeapi.js"></script>
+  <script src="./js/favoritos.js"></script>
+</body>
+
+</html>

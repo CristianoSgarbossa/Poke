@@ -1,0 +1,137 @@
+.header-bg {
+  background: linear-gradient(145deg, #ff2c2c 0%, #3a3a3a 40%, #0077ff 100%);
+  background-size: 300% 300%;
+  animation: gradientMove 10s ease-in-out infinite;
+  height: 120px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  transition: backdrop-filter 0.4s ease, background 0.4s ease;
+}
+
+.header-bg.scrolled {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.header img {
+  height: 90px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 64px;
+  align-items: center;
+}
+
+.header-menu a {
+  font-size: 18px;
+  font-family: "Fredoka One";
+  color: #ffffff;
+  display: inline-block;
+  position: relative;
+}
+
+.header-menu a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  left: 0;
+  bottom: -5px;
+  height: 2px;
+  background: var(--cor-0);
+  transition: width 0.3s ease;
+}
+
+.header-menu a:hover::after,
+.header-menu a.active::after {
+  width: 100%;
+}
+
+.search-box {
+  position: relative;
+  display: inline-block;
+}
+
+.search-box input {
+  padding: 8px 40px 8px 20px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  outline: none;
+  width: 200px;
+}
+
+.search-box button {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.search-box button img {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 620px) {
+  .search-box input {
+    width: 100px;
+  }
+}
+
+@media (max-width: 540px) {
+  .header-bg {
+    height: 200px;
+  }
+
+  .search-box input {
+    width: 100px;
+  }
+
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 0;
+    position: relative;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .header img {
+    grid-column: 1 / -1;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .header-menu {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .header-menu li {
+    margin: 0 5px;
+  }
+}
